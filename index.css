@@ -421,3 +421,11 @@ body {
     display: table-header-group;
   }
 }
+@media (max-width: 82.0rem){
+  .transform{
+  margin: 0 2rem;
+  }
+  .stand-out{
+    margin: 0 2rem;
+  }
+}
