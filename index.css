@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Roboto+Mono:wght@500&family=Roboto:wght@300;400&display=swap");
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+/* =================
+        GLOBAL 
+   ================= */
+body {
+  font-size: 1.6rem;
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+/*===================
+  CUSTOMES PROPERTIES 
+  =================== */
+:root {
+  --Soft-red: hsl(7, 99%, 60%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --Dark-blue: hsl(198, 62%, 26%);
+  --Dark-moderate-cyan: hsl(168, 34%, 41%);
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --line-height: 1.7;
+  --padding: 2.2rem;
+}
+/* =================
+     NAVBAR SYLING 
+   ================= */
+.navbar-background {
+  background-image: url("images/desktop/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+  overflow: hidden;
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.menue {
+  display: flex;
+  gap: 1rem;
+}
+.menue li {
+  padding: 1.5rem 2rem;
+}
+.menue a:not(.current){
+  color: var(--White);
+}
+.menue a:not(.current):hover{
+  color: var(--Dark-desaturated-cyans);
+}
+.menue a:hover{
+  cursor: pointer;
+}
+.current {
+  background: var(--White);
+  color: var(--Very-dark-desaturated-blue);
+  border-radius: 3.2rem;
+  text-transform: uppercase;
+  padding: 1.3rem 2rem;
+  transition: all 500ms ease;
+  border: none;
+}
+.current:hover{
+  background: #4db5ff;
+  color: var(--White);
+}
+.logo {
+  color: var(--White);
+  font-size: 1.3rem;
+}
+.banner {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.7rem;
+  color: var(--White);
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
+.arrow-down{
+  text-align: center;
+  margin-top: 5rem;
+}
+.arrow-down img{
+  height: 7rem;
+}
+
+#hamburger {
+  display: none;
+  color: var(--White);
+  font-size: 1.8rem;
+}
+
+/* ADV-IMAGES */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  grid-auto-rows: 400px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.card img {
+  height: 100%;
+}
+.utility-class{
+  text-align: justify;
+}
+.utility-class h3{
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom:var(--padding);
+}
+.utility-class p{
+  font-size: 1.5rem;
+  line-height: var(--line-height);
+  padding-bottom: var(--padding);
+  color: var(--Very-dark-grayish-blue);
+}
+.utility-class a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--Very-dark-desaturated-blue);
+}
+.transform{
+  padding-top: var(--padding);
+}
+.transform p{
+  max-width: 43rem;
+}
+.transform a {
+  text-decoration: underline hsl(52, 71%, 81%) 4px;
+}
+.transform a:hover {
+  text-decoration: underline hsl(51, 100%, 49%) 4px;
+}
+.stand-out h3 {
+  max-width: 25rem;
+  
+}
+.stand-out p{
+  max-width: 43rem;
+}
+.stand-out a{
+  text-decoration: underline hsl(8, 50%, 72%) 4px;
+}
+.stand-out a:hover{
+  text-decoration: underline hsl(7, 99%, 60%) 4px;
+}
+.graphic-design {
+  background-image: url("images/desktop/image-graphic-design.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.design {
+  margin-top: 20rem;
+  text-align: center;
+}
+.design h3{
+  color: var(--Dark-desaturated-cyan);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.design p{
+  font-size: 1.5rem;
+  max-width: 37rem;
+  line-height:  var(--line-height);
+  color: var(--Dark-desaturated-cyan);
+}
+.photography {
+  background-image: url("images/desktop/image-photography.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.photo{
+  margin-top: 20rem;
+  text-align: center;
+}
+.photo h3{
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: var(--padding);
+  color: var(--Dark-blue);
+}
+.photo p{
+  font-size: 1.5rem;
+  max-width: 40rem;
+  line-height:  var(--line-height);
+  color: var(--Dark-blue);
+}
+
+
+/* ===================
+   CLIENT TESTIMONIALS 
+   =================== */
+.testimonials-container h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: var(--Very-dark-grayish-blue);
+  padding-top: 8rem;
+  letter-spacing: 0.3rem;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 389px;
+  text-align: center;
+  align-content: center;
+  margin-top: 6rem;
+  gap: 2rem;
+}
+.client-image img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.client-image h4 {
+  font-size: medium;
+  padding-top: 2rem;
+}
+.client-image p {
+  padding-top: 2.5rem;
+  color: var(--Very-dark-grayish-blue);
+  line-height: 1.7;
+  font-size: 1.3rem;
+}
+.client-image small {
+  color: var(--Very-dark-grayish-blue);
+  line-height: 1.6;
+  font-size: 1rem;
+
+}
+
+/* ========================
+   IMAGES BEFORE THE FOOTER 
+   ======================== */
+.images-before-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 270px;
+}
+/* ========================
+          FOOTER 
+   ======================== */
+.footer {
+  height: 20rem;
+  background: var(--Dark-moderate-cyan);
+  width: 100%;
+}
+.footer h3 {
+  text-align: center;
+  font-size: x-large;
+  padding-top: 3rem;
+  color: var(--Dark-desaturated-cyan);
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 3rem;
+}
+.footer-list a {
+  color: var(--Dark-desaturated-cyan);
+}
+.footer-list a:hover{
+  color: var(--White);
+}
+.social-icons {
+  padding-top: 5rem;
+}
+.icon:hover {
+  filter: brightness(0) invert(9);
+}
+
+/* ========================
+      MOBILE DESIGN 
+   ======================== */
+@media (max-width: 37.5rem) {
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+  .images-before-footer {
+    grid-template-columns: 50% 50%;
+  } 
+   .menue {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background: var(--White);
+    margin: auto;
+    width: 88%;
+    padding: 3rem;
+    margin-top: 4rem;
+    z-index: 999;
+  } 
+  .switch{
+    display: block;
+  }
+  .menue a:not(.current){
+    color: var(--Dark-grayish-blue);
+  }
+  .current {
+    background: var(--Yellow);
+    color: var(--Very-dark-desaturated-blue);
+    border-radius: 3.2rem;
+    text-transform: uppercase;
+    padding: 1.3rem 2rem;
+    transition: all 500ms ease;
+    border: none;
+  }
+  .menue::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -4rem;
+    height: 40px;
+    width: 40px;
+    border-bottom-right-radius: 50%;
+  }
+  .menue::before{
+     box-shadow: 0 20px 0 0 var(--White);
+  }
+  
+  .client-image p {
+    font-size: 1.8rem;
+  }
+  .client-image h4 {
+    font-size:large
+  }
+  .client-image> small {
+    font-size: 1.4rem;
+    margin-top: 1.4rem;
+    display: block;
+  }
+  .testimonials-container h3 {
+    font-size: 2rem;
+  }
+  #hamburger {
+    display: block;
+  }
+  .utility-class{
+    text-align: center;
+  }
+  .utility-class p{
+    font-size: 1.8rem;
+  }
+  .stand-out h3{
+    margin: 0 auto;
+  }
+  .transform p{
+    margin: 0 auto;
+  }
+  .arrow-down{
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .arrow-down img{
+    height: 10rem;
+  } 
+  .design p{
+    font-size: 1.7rem;
+    padding-bottom: var(--padding);
+  }
+  .photo p{
+    font-size: 1.7rem;
+  }
+  
+   .altitude{
+    min-height: 400px; ;
+  } 
+
+   .table{
+    display: table;
+   }
+  .table-one{
+    display: table-row-group;
+  }
+  .table-two{
+    display: table-header-group;
+  }
+}
