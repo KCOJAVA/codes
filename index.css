@@ -329,10 +329,10 @@ body {
     display: none;
     position: absolute;
     right: 0;
-    top: 8rem;
+    top: 6rem;
     text-align: center;
     background: var(--White);
-    margin: -1rem auto 0;
+    margin: auto;
     width: calc(100vw - 4rem);
     padding: 3rem;
     z-index: 999;
