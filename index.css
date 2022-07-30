@@ -322,6 +322,9 @@ body {
   .images-before-footer {
     grid-template-columns: 50% 50%;
   } 
+  .positioning{
+    position: relative;
+  }
    .menue {
     display: none;
     position: absolute;
