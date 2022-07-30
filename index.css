@@ -329,7 +329,7 @@ body {
     top: 8rem;
     text-align: center;
     background: var(--White);
-    margin: auto;
+    margin: -1rem auto 0;
     width: calc(100vw - 4rem);
     padding: 3rem;
     z-index: 999;
