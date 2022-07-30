@@ -357,7 +357,7 @@ body {
     position: relative;
     height: 0;
     border-style: solid;
-    border-color: red;
+    border-color: white transparent;
     display: block;
     margin-left: auto;
     width: 0;
